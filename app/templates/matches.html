@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="main_table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>&nbsp;</th>
+          <th>&nbsp;</th>
+        </tr>
+        {% for stadium in stadiums %}
+        <tr>
+          <td>{{stadium.name}}</td>
+          <td>{{stadium.city}}</td>
+          <td>{{stadium.country}}</td>
+          <td>
+            <form action="/update/{{stadium.id}}">
+              <button type="submit"><i class="fa fa-edit"></i></button>
+            </form>
+          </td>
+          <td>
+            <form method="POST" action="/delete">
+              <input type="hidden" value="{{stadium.id}}" name="id">
+              <button type="submit"><i class="fa fa-trash-alt"></i></button>
+            </form>
+          </td>
+        </tr>
+      {% endfor %}
+      </table>
+    </div>
+{% endblock %}

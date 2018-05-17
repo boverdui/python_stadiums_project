@@ -1,0 +1,107 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  background-color: #abd2f2;
+  font-family: Arial;
+  margin: auto;
+}
+
+button {
+  background-color: #abd2f2;
+  border: none;
+}
+
+fieldset {
+  border-color: #3965ad;
+  border-radius: 5px;
+}
+
+input {
+  display: block;
+  width: 193px;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+  width: 150px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+table {
+  border-bottom: 3px solid #3965ad;
+  border-top: 3px solid #3965ad;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: left;
+}
+
+td {
+  background-color: #abd2f2;
+}
+
+th {
+  background-color: #3965ad;
+  font-size: 16px;
+  color: white;
+  vertical-align: middle;
+}
+
+th, td {
+  border-bottom: 1px solid #3965ad;
+  padding: 5px 10px 5px 10px;
+}
+
+.fa-edit, .fa-list-alt, .fa-trash-alt, .fa-save {
+  background-color: #abd2f2;
+  font-size: 20px;
+}
+
+.main {
+  padding: 20px 40px 0px 40px;
+}
+
+.main_table {
+  padding: 40px 0px 0px 40px;
+}
+
+.navigation {
+  background-color: #3965ad;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+.navigation a {
+  border-bottom: 5px solid transparent;
+  color: white;
+  display: block;
+  float: left;
+  padding: 10px 10px 5px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation a.active {
+  border-bottom: 5px solid red;
+}
+
+.navigation a:hover {
+  border-bottom: 5px solid red;
+}
+
+.title {
+  background-color: #141B41;
+  font-size: 48px;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 10px 0px 10px 40px;
+  text-align: left;
+}

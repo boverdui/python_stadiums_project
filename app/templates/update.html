@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="main">
+    <form method="POST" action="/update/{{stadium.id}}">
+      <fieldset>
+        <legend>Update stadium</legend>
+        <input type="hidden" value="{{stadium.id}}" name="id">
+        <p>
+          <label>Name:</label>
+          <input type="text" value="{{stadium.name}}" name="newname">
+        </p>
+        <p>
+          <label>City:</label>
+          <input type="text" value="{{stadium.city}}" name="newcity">
+        </p>
+        <p>
+          <label>Country:</label>
+          <input type="text" value="{{stadium.country}}" name="newcountry">
+        </p>
+        <button type="submit"><i class="fa fa-save"></i></button>
+    </form>
+  </div>
+{% endblock %}

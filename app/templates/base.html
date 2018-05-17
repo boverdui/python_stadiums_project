@@ -1,0 +1,21 @@
+<html>
+    <head>
+      <title>Rugby stadiums</title>
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+      <title>Rugby stadiums</title>
+      <link rel="icon" href="{{ url_for('static',filename='ball.png') }}">
+      <nav>
+        <div class="title">
+          <a href="/">Rugby stadiums</a>
+        </div>
+        <div class="navigation">
+          <a href="/stadiums">Stadiums</a>
+          <a href="/add">Add a stadium</a>
+        </div>
+      </nav>
+    </head>
+    <body>
+      {% block content %}{% endblock %}
+    </body>
+</html>
